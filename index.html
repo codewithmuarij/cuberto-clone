@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="lenis.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="cursor"></div>
+      <nav>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="logo"
+          fill="none"
+          viewBox="0 0 94 20"
+        >
+          <path
+            fill="currentColor"
+            d="M6.82 16.14c-2.11 0-3.85-1.88-3.85-4.15 0-2.27 1.74-4.14 3.85-4.14a3.8 3.8 0 0 1 3.28 1.97l2.54-1.68a6.75 6.75 0 0 0-5.81-3.49C3.08 4.65 0 7.97 0 12c0 4.03 3.08 7.35 6.83 7.35A6.75 6.75 0 0 0 12.57 16l-2.5-1.74a3.87 3.87 0 0 1-3.25 1.88Z"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform-origin: 0px 0px;
+            "
+            data-svg-origin="6.320000171661377 12"
+            transform="matrix(1,0,0,1,0,0)"
+          ></path>
+          <path
+            fill="currentColor"
+            d="M23.62 13.35a2.81 2.81 0 0 1-2.83 2.78h-.34a2.8 2.8 0 0 1-2.83-2.78v-8.4h-3.33v8.51a5.92 5.92 0 0 0 5.97 5.87H21c3.3 0 5.97-2.62 5.97-5.87v-8.5h-3.33v8.39Z"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform-origin: 0px 0px;
+            "
+            data-svg-origin="20.630001068115234 12.14010763168335"
+            transform="matrix(1,0,0,1,0,0)"
+          ></path>
+          <path
+            fill="currentColor"
+            d="M35.98 4.6c-1.4 0-2.72.46-3.81 1.23V0h-3.05v11.95c0 4.06 3.07 7.35 6.87 7.35 3.79 0 6.86-3.3 6.86-7.35 0-4.07-3.08-7.36-6.87-7.36Zm0 11.49c-2.13 0-3.86-1.86-3.86-4.15 0-2.28 1.73-4.14 3.86-4.14s3.86 1.86 3.86 4.14c.01 2.29-1.72 4.15-3.86 4.15Z"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform-origin: 0px 0px;
+            "
+            data-svg-origin="35.98499870300293 9.649999618530273"
+            transform="matrix(1,0,0,1,0,0)"
+          ></path>
+          <path
+            fill="currentColor"
+            d="M57.89 13.19a8.04 8.04 0 0 0 0-2.5c-.55-3.46-3.37-6.1-6.76-6.1-3.8 0-6.86 3.3-6.86 7.35 0 4.06 3.06 7.35 6.86 7.35 2.39 0 4.5-1.32 5.73-3.3l-.02-.01-2.5-1.75a3.8 3.8 0 0 1-3.22 1.86 3.91 3.91 0 0 1-3.7-2.9H57.9ZM51.13 7.8c1.73 0 3.2 1.22 3.69 2.9h-7.38a3.9 3.9 0 0 1 3.69-2.9Z"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform-origin: 0px 0px;
+            "
+            data-svg-origin="51.128883361816406 11.939999103546143"
+            transform="matrix(1,0,0,1,0,0)"
+          ></path>
+          <path
+            fill="currentColor"
+            d="M62.74 4.96H59.7v13.96h3.04v-6.33c0-3.33 2-4.62 4.49-4.63v-3c-1.74 0-3.28.48-4.49 1.3v-1.3Z"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform-origin: 0px 0px;
+            "
+            data-svg-origin="63.46500205993652 11.940000057220459"
+            transform="matrix(1,0,0,1,0,0)"
+          ></path>
+          <path
+            fill="currentColor"
+            d="M79.1 18.46c-.95.53-2.03.82-3.13.82-3.73 0-6.8-3.28-6.83-7.29V0h3.05v4.96h5.24v3h-5.24v4.03c.02 2.25 1.68 4.1 3.78 4.1a3.5 3.5 0 0 0 1.47-.33l1.66 2.7Z"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform-origin: 0px 0px;
+            "
+            data-svg-origin="74.12000274658203 9.639999389648438"
+            transform="matrix(1,0,0,1,0,0)"
+          ></path>
+          <path
+            fill="currentColor"
+            d="M86.14 4.6c-3.79 0-6.86 3.29-6.86 7.34 0 4.06 3.07 7.35 6.86 7.35 3.8 0 6.87-3.3 6.87-7.35 0-4.06-3.08-7.35-6.87-7.35Zm0 11.49c-2.13 0-3.86-1.86-3.86-4.15 0-2.28 1.73-4.14 3.86-4.14 2.14 0 3.87 1.86 3.87 4.14 0 2.29-1.73 4.15-3.87 4.15Z"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform-origin: 0px 0px;
+            "
+            data-svg-origin="86.14500045776367 11.940001010894775"
+            transform="matrix(1,0,0,1,0,0)"
+          ></path>
+        </svg>
+        <div id="right-nav">
+          <div class="hanime-div">
+            <h1 class="hanime-h1">Services</h1>
+            <h1 class="hanime-h2">Services</h1>
+          </div>
+          <div class="hanime-div">
+            <h1 class="hanime-h1">Projects</h1>
+            <h1 class="hanime-h2">Projects</h1>
+          </div>
+          <div class="hanime-div">
+            <h1 class="hanime-h1">Company</h1>
+            <h1 class="hanime-h2">Company</h1>
+          </div>
+          <div class="hanime-div">
+            <h1 class="hanime-h1">Blog</h1>
+            <h1 class="hanime-h2">Blog</h1>
+          </div>
+          <div class="hanime-div">
+            <h1 class="hanime-h1">Contacts</h1>
+            <h1 class="hanime-h2">Contacts</h1>
+          </div>
+        </div>
+      </nav>
+
+      <div id="part1">
+        <div class="page1">
+          <div id="heroheadcover">
+            <div id="herohead1">
+              <h1 class="heroanime" id="head1">
+                <span>Design </span>
+                <span>agency </span>
+                <span>focused</span>
+              </h1>
+            </div>
+            <div id="herohead2">
+              <h1 class="heroanime" id="head2">
+                <span>on </span>
+                <span>AI-driven </span>
+                <span>products</span>
+              </h1>
+            </div>
+          </div>
+
+          <div class="heroheadcover2">
+            <div id="heropara1" class="heroanimepara">
+              <h2 id="para1">
+                <span>Cuberto is </span>
+                <span>a digital</span>
+                <span>design and</span>
+                <span> technology partner</span>
+                <span> focused on smart </span>
+              </h2>
+            </div>
+
+            <div id="heropara2" class="heroanimepara">
+              <h2 id="para2">
+                <span>interactions, </span>
+                <span>delightful UX, </span>
+                <span>and cutting-edge </span>
+                <span>AI solutions.</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div id="herovideo" class="video">
+          <video autoplay loop src="./herovideo.mp4"></video>
+        </div>
+
+        <div class="third">
+          <div class="video2">
+            <video autoplay loop src="./aboutusvideo.mp4"></video>
+          </div>
+
+          <div class="right-content">
+            <p>
+              Since 2010, we have been helping our clients find exceptional
+              solutions for their businesses, creating memorable websites and
+              digital products.
+            </p>
+            <p>
+              Cuberto doesn't do cookie-cutter solutions and we build products
+              exactly as they were during the design phase, no short cuts or
+              simplifications.
+            </p>
+
+            <div id="aboutusbtn">
+              <div id="aboutbtntop">
+                <div class="aboutustext">What we do</div>
+              </div>
+              <div id="aboutbtnbot">
+                <div class="aboutustext">What we do</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="part2">
+        <div class="container">
+          <h1>Featured Projects</h1>
+
+          <div class="cardcontainer">
+            <div class="cardsleft">
+              <div class="card1">
+                <div class="card">
+                  <video autoplay loop src="./project1.mp4"></video>
+                </div>
+                <h1>Punto Pago - The First Super-App in Latin America</h1>
+              </div>
+
+              <div class="card2">
+                <div class="card">
+                  <video autoplay loop src="./project2.mp4"></video>
+                </div>
+                <h1>DaoWay - Astrology planner app: plan, achieve, thrive</h1>
+              </div>
+
+              <div class="card3">
+                <div class="card">
+                  <video autoplay loop src="./project3.mp4"></video>
+                </div>
+                <h1>
+                  Riyadh - Official website of Riyadh, Saudi Arabia's capital
+                </h1>
+              </div>
+
+              <div class="card4">
+                <div class="card">
+                  <video autoplay loop src="./project4.mp4"></video>
+                </div>
+                <h1>Qvino - Wine marketplace with interactive learning</h1>
+              </div>
+
+              <div class="card5">
+                <div class="card">
+                  <video autoplay loop src="./project5.mp4"></video>
+                </div>
+                <h1>Potion - Sales tool for increasing conversions</h1>
+              </div>
+
+              <div class="card6">
+                <div class="card">
+                  <video autoplay loop src="./project6.mp4"></video>
+                </div>
+                <h1>Cisco - Cloud based network management</h1>
+              </div>
+            </div>
+
+            <div class="cardsright">
+              <div class="card7">
+                <div class="card">
+                  <video autoplay loop src="./project7.mp4"></video>
+                </div>
+                <h1>
+                  Kelvin Zero - A digital product for passwordless
+                  authentication
+                </h1>
+              </div>
+
+              <div class="card8">
+                <div class="card">
+                  <video autoplay loop src="./project8.mp4"></video>
+                </div>
+                <h1>Magma - The ultimate tool for building in the Web3 era</h1>
+              </div>
+
+              <div class="card9">
+                <div class="card">
+                  <video autoplay loop src="./project9.mp4"></video>
+                </div>
+                <h1>FlipaClip - The best tool for stop-motion animation</h1>
+              </div>
+
+              <div class="card10">
+                <div class="card">
+                  <video autoplay loop src="./project10.mp4"></video>
+                </div>
+                <h1>Zelt - Run HR, IT & Finance in one place</h1>
+              </div>
+
+              <div class="card11">
+                <div class="card">
+                  <video autoplay loop src="./project11.mp4"></video>
+                </div>
+                <h1>Ferrumpipe - Galvanized steel metal frame manufacturer</h1>
+              </div>
+            </div>
+          </div>
+          <div class="projectbtn">
+            <div id="projectbtn1">View All Projects</div>
+            <div id="projectbtn2">View All Projects</div>
+          </div>
+        </div>
+
+        <div class="part3">
+          <div class="container3">
+            <div class="cardsleft2">
+              <h1 id="services">Our services</h1>
+              <p id="para">
+                From motion design to AI-powered products — we design and build
+                interfaces for the future.
+              </p>
+
+              <div class="card12">
+                <div class="servicecard">
+                  <video autoplay loop src="./services1.mp4"></video>
+                </div>
+                <h1>Brand identity</h1>
+                <p>
+                  Strategic design that positions AI products for trust and
+                  clarity.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardsright">
+              <div class="card13">
+                <div class="servicecard">
+                  <video autoplay loop src="./services2.mp4"></video>
+                </div>
+                <h1>AI-enhanced UX/UI design</h1>
+                <p>
+                  Interfaces that adapt, predict, and respond intelligently.
+                </p>
+              </div>
+
+              <div class="card14">
+                <div class="servicecard">
+                  <video autoplay loop src="./services3.mp4"></video>
+                </div>
+                <h1>Custom development</h1>
+                <p>
+                  Frontend + backend + AI integrations — built for performance
+                  and scalability.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="servicesbtn">
+            <div class="servicebtntop">View All Services</div>
+            <div class="servicebtnbot">View All Services</div>
+          </div>
+
+          <div class="part4">
+            <div class="blog">
+              <h1 id="bloghead">Blog</h1>
+
+              <div class="blogcontainer">
+                <div class="blogleft">
+                  <div class="blogimg">
+                    <img src="./blog1.png" alt="" />
+                  </div>
+                </div>
+                <div class="blogright">
+                  <h2>Design Course</h2>
+                  <h1>How to Make UI/UX website // Frontend development</h1>
+                  <p>10/23/2024</p>
+                </div>
+              </div>
+              <div class="blogcontainer">
+                <div class="blogleft">
+                  <div class="blogimg"><img src="./blog2.png" alt="" /></div>
+                </div>
+                <div class="blogright">
+                  <h2>Design Course</h2>
+                  <h1>How to Cook an Emotional Site // Web Development</h1>
+                  <p>10/23/2024</p>
+                </div>
+              </div>
+              <div class="blogcontainer">
+                <div class="blogleft">
+                  <div class="blogimg"><img src="./blog3.png" alt="" /></div>
+                </div>
+                <div class="blogright">
+                  <h2>Design Source</h2>
+                  <h1>How to Make UI/UX website // Frontend development</h1>
+                  <p>10/23/2024</p>
+                </div>
+              </div>
+
+              <button id="blogbtn">Visit our blog</button>
+            </div>
+            <div class="videocontainer">
+              <div class="lastvideo">
+                <video autoplay loop src="./ropes.mp4" type="video/mp4"></video>
+              </div>
+
+              <div class="textabovevideo">
+                <h1>Have <br />an idea?</h1>
+                <button>TELL US</button>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="footerup">
+                <div class="footerupleft">
+                  <div class="email">
+                    <button>info@cuberto.com</button>
+
+                    <h1>
+                      Main Office 901N Pitt Street <br />Alexandria VA,22314
+                    </h1>
+                  </div>
+                  <div class="number">
+                    <button>+1 301 549 9309</button>
+                    <h1>Second Office Na Perstyne <br />342/1,11000 Prague</h1>
+                  </div>
+                </div>
+                <div class="footerupright">
+                  <div class="nava">
+                    <h1>Services</h1>
+                    <h1>Projects</h1>
+                    <h1>Company</h1>
+                  </div>
+                  <div class="navb">
+                    <h1>Blog</h1>
+                    <h1>Workflow</h1>
+                    <h1>Contacts</h1>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footerdown">
+                <div class="footerdownleft">
+                  <h1>Privacy Policy</h1>
+                  <h1>2025, Cuberto</h1>
+                </div>
+                <div class="footerdownright">
+                  <div class="icon"></div>
+                  <div class="icon"></div>
+                  <div class="icon"></div>
+                  <div class="icon"></div>
+                  <div class="icon"></div>
+                  <div class="icon"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
