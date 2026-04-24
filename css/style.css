@@ -225,6 +225,12 @@
     overflow: hidden;
 }
 
+.servicevid{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .cardcontainer{
     display: flex;
     gap: 150px;
