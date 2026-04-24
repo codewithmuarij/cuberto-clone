@@ -217,13 +217,6 @@
     overflow: hidden;
 }
 
-.servicecard{
-    height: 700px;
-    width: 500px;
-    background: yellow;
-    border-radius: 30px; 
-    overflow: hidden;
-}
 
 .cardcontainer{
     display: flex;
@@ -284,6 +277,21 @@
     background: #ffffff;
     color: rgb(0, 0, 0);
     border-radius: 80px;
+}
+
+.servicecard{
+    height: 700px;
+    width: 500px;
+    background: rgb(34, 34, 33);
+    border-radius: 30px; 
+    overflow: hidden;
+}
+
+.servicevid{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #servicesbtn{   
