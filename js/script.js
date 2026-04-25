@@ -404,4 +404,116 @@ servicebtn.addEventListener('mouseleave', function(){
         backgroundColor: "black"
     })
 })
+
+let blogbtn = document.querySelector("#blogbtn")
+
+blogbtn.addEventListener('mouseenter', function (){
+
+
+    gsap.to("#blogbtntop",{
+        y: -97,
+        duration: 0.5,
+        ease: "power1.out"
+    })
+
+    gsap.to("#blogbtnbot",{
+        y: -89,
+        ease: "power1.out"
+    })
+
+    gsap.from("#blogbtnbot",{
+        scale:0,
+        duration: 0.5,
+        borderRadius: '50%',
+        width: '10%',
+        ease: "power1.out"
+    })
+
+    gsap.to(cursor,{
+        scale: 3,
+        ease: "power1.out",
+        backgroundColor: "black"
+    })
+
+  
 })
+
+blogbtn.addEventListener('mouseleave', function(){
+
+    gsap.to("#blogbtntop",{
+        y: 0,
+        ease: "power1.out"
+    })
+
+    gsap.to("#blogbtnbot",{
+        y: 0,
+        ease: "power1.out"
+    })
+
+    gsap.to(cursor,{
+        scale: 1,
+        ease: "power1.out",
+        backgroundColor: "white"
+    })
+})
+
+
+let tellusbtn = document.querySelector("#tellusbtn")
+
+tellusbtn.addEventListener('mouseenter', function (){
+
+    console.log('hello')
+
+
+    gsap.to("#tellustop",{
+        y: -135,
+        duration: 0.5,
+        ease: "power1.out"
+    })
+
+    gsap.to("#tellusbot",{
+        y: -198,
+        ease: "power1.out"
+    })
+
+    gsap.from("#tellusbot",{
+        scale:0,
+        duration: 0.5,
+        borderRadius: '50%',
+        width: '10%',
+        ease: "power1.out"
+    })
+
+    gsap.to(cursor,{
+        scale: 3,
+        ease: "power1.out",
+        backgroundColor: "black"
+    })
+
+  
+})
+
+tellusbtn.addEventListener('mouseleave', function(){
+
+    gsap.to("#tellustop",{
+        y: 0,
+        ease: "power1.out"
+    })
+
+    gsap.to("#tellusbot",{
+        y: 0,
+        ease: "power1.out"
+    })
+
+    gsap.to(cursor,{
+        scale: 1,
+        ease: "power1.out",
+        backgroundColor: "white"
+    })
+})
+
+
+
+
+})
+
