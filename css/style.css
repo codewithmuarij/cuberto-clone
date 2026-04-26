@@ -30,12 +30,12 @@
 #main nav{ 
     display: flex;
     justify-content: space-between;
-    padding: 25px 270px;
+    padding: 1.5vw 14vw; 
     align-items: center;
 }
 
 #logo{
-    height: 23px;
+    height: 1.2vw;
 }
 
 #right-nav h1{
@@ -45,7 +45,7 @@
 
 #right-nav{
     display: flex;
-    gap: 40px;
+    gap: 1.5vw;
 }
 
 
@@ -53,37 +53,42 @@
     font-family: 'suisseintl-medium';
     font-weight: 100;
     font-size: 4.8vw;
-    line-height: 90px;
-    text-align: center;
-
+    line-height: 4.6vw;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
 }
 
 #herohead2 h1{
     font-family: 'suisseintl-medium';
     font-weight: 100;
     font-size: 4.8vw;
-    line-height: 90px;
-    text-align: center;
+    line-height: 4.6vw;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
     
 }
 
-#herohead1{
-    padding-bottom: 100px; 
-}
 
 #herohead1{
     overflow: hidden;
-    height: 90px;
-
+    height: 4.6vw;
+    padding-bottom: 5.2vw;
     
 }
+
 .heroanime span {
   display: inline-block;
 }
 
 #herohead2{
     overflow: hidden;
-    height: 90px;
+    height: 4.6vw;
 
     
 }
@@ -91,7 +96,7 @@
 #heropara1{
     overflow: hidden;
  
-     padding-top: 25px;
+     padding-top: 1.1vw;
 }
 
 #heropara2{
@@ -100,7 +105,7 @@
 }
 
 #heroheadcover{
-    padding-top: 130px;
+    padding-top: 6.2vw;
 }
 
 .heroanimepara span{
@@ -113,35 +118,35 @@
     text-align: center;
    font-weight: 100;
    
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
 }
 
 .video{
-    height: 750px;
+    height: 39vw;
     width: 70vw;
     background: #000;
-    margin-top: 100px;
+    margin-top: 5vw;
     border-radius: 30px;
     overflow: hidden;
 }
 
 #part1{ 
 
-    padding: 0 300px;
-    padding-bottom: 100px;
+    padding: 0 15vw;
+    padding-bottom: 5vw;
 }
 
 .video2{
     background: #000;
-    height: 450px;
-    width: 1500px;
+    height: 23vw;
+    width: 75vw;
     overflow: hidden;
 }
 
 .third{
     height: 100%;
     width: 100%;
-    padding: 200px 150px;
+    padding: 10vw 7.1vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -151,20 +156,20 @@
 
 .third p{
     font-family: 'suisseintl-regular';
-    font-size: 25px;
+    font-size: 1.3vw; 
 }
 
 .right-content{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.3vw;
 }
 
 #aboutusbtn{
-    height: 100px;
-    width: 250px;
+    height: 5vw;
+    width: 13vw;
     font-family: 'suisseintl-regular';
-    font-size: 25px;
+    font-size: 1.2vw;
     border-radius: 50px;
     background: white;
     border: 2px solid black;
@@ -195,11 +200,21 @@
     width: 100%;
     background: #161616;
     border-radius: 50px;
-    
+    overflow: hidden;
 }
 
 .container{
-    padding: 200px 400px;
+    width: 100vw;
+    padding: 10vw 18vw 10vw 17vw; 
+    
+    
+}
+
+.cardcontainer{
+    display: flex;
+    gap: 18vw;
+    width: 75vw;
+    overflow: hidden;
 }
 
 .part2 h1{
@@ -210,17 +225,15 @@
 }
 
 .card{
-    height: 700px;
-    width: 500px;
-    background: yellow;
+    height: 34vw;
+    width: 25vw;
     border-radius: 30px; 
     overflow: hidden;
 }
 
 .servicecard{
-    height: 700px;
-    width: 500px;
-    background: yellow;
+    height: 34vw;
+    width: 25vw;
     border-radius: 30px; 
     overflow: hidden;
 }
@@ -231,43 +244,40 @@
     object-fit: cover;
 }
 
-.cardcontainer{
-    display: flex;
-    gap: 150px;
-}
+
 
 .cardsleft{
     display: flex;
     flex-direction: column;
-    gap: 200px;
-    padding: 100px 0;
+    gap: 10vw;
+    padding: 5vw 0;
     
 }
 
 .cardsright{
     display: flex;
     flex-direction: column;
-    gap: 200px;
-    padding: 400px 0;
+    gap: 10vw;
+    padding: 20vw 0;
 }
 
 .cardcontainer h1{
     font-size: 1.5vw;
     font-family: 'suisseintl-medium';
-    margin-top: 40px;
-    margin-left: 6px;
+    margin-top: 2vw;
+    margin-left: 0.25vw;
 }
 
 .projectbtn{
     
-    height: 100px;
-    width: 300px;
+    height: 5vw;
+    width: 16vw;
     font-family: 'suisseintl-regular';
-    font-size: 25px;
+    font-size: 1.3vw; 
     border-radius: 50px;
     background: transparent;
     text-wrap: nowrap;
-    transform: translateX(400px);
+    transform: translateX(27vw);
     color: white;
     border: 2px solid white;
     overflow: hidden;
@@ -294,15 +304,15 @@
 
 #servicesbtn{   
     
-    height: 85px;
-    width: 300px;
+    height: 4.3vw;
+    width: 16vw;
     font-family: 'suisseintl-regular';
-    font-size: 25px;
+    font-size: 1.3vw;
     border-radius: 50px;
     background: white;
     text-wrap: nowrap;
     position: absolute;
-    transform: translate(800px, -300px);
+    transform: translate(40vw, -16vw);
     border: 2px solid black;
     overflow: hidden;
 }
@@ -336,9 +346,9 @@
 }
 
 .container3{
-    padding: 100px 400px;
+    padding: 5vw 19vw;  
     display: flex;
-    gap: 150px;
+    gap: 12vw;
 }
 
 #services{
@@ -353,15 +363,16 @@
 
 #para{
     font-family: 'suisseintl-regular';
-    font-size: 25px;
+    font-size: 1.2vw;
+   
 
 }
 
 .cardsleft2{
     display: flex;
     flex-direction: column;
-    gap: 100px;
-    padding: 100px 0;
+    gap: 5vw;
+    padding: 5vw 0;
     
 }
 
@@ -370,17 +381,16 @@
     font-size: 2.5vw;
     font-family: 'suisseintl-medium';
     font-weight: 100;
-
-    margin-top: 40px;
+    margin-top: 2vw;
 
 }
 
 .container3 p{
     color: #000;
     font-size: 1.2vw;
-    font-family: 'suisseintl-medium';
+    font-family: 'suisseintl-regular';
     font-weight: 100;
-    margin-top: 10px;
+    margin-top: 0.5vw;
 }
 
 
@@ -390,20 +400,20 @@
     border-radius: 50px;
     height: 100%;
     width: 100%;
-    padding: 200px 400px;
+    padding: 10vw 20vw; 
     position: relative;
 
 }
 
 .blogbtn{
-    height: 10px;
-    width: 10px;
+    height: 1vw;
+    width: 0.5vw;
 }
 
 .blogleft{
-    background: white;
-    height: 270px;
-    width: 800px;
+    background: rgb(255, 255, 255);
+    height: 14vw;
+    width: 40vw;
     border-radius: 20px;
     overflow: hidden;
     
@@ -411,28 +421,28 @@
 
 .blogcontainer{
     display: flex;
-    gap: 50px;
-    margin-top: 50px;
+    gap: 2.5vw;
+    margin-top: 2.5vw;
 }
 
 .blogcontainer h1{
     font-size: 2vw;
     font-weight: 100;
     font-family: 'suisseintl-medium';
-    margin-top: 25px;
+    margin-top: 2.1vw;
 }
 
 #blogbtn{
-    height: 85px;
-    width: 300px; 
+    height: 4.1vw;
+    width: 15vw; 
     font-family: 'suisseintl-light';
     font-weight: 100;
-    font-size: 35px;
+    font-size: 1.8vw;
     border-radius: 50px;
     background: transparent;
     text-wrap: nowrap;
-    margin-left: 450px;
-    margin-top: 100px;
+    margin-left: 22vw;
+    margin-top: 5vw;
     color: white;
     border: 1px solid white;
     
@@ -462,7 +472,7 @@
     color: white;
     border: white solid 1px;
     width: fit-content;
-    padding: 10px 25px;
+    padding: 0.5vw 1.1vw;
     border-radius: 30px;
     font-size: 0.8vw;
     text-transform: uppercase;
@@ -471,8 +481,8 @@
 .blogright{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 40px 0;
+    gap: 0.5vw;
+    padding: 2vw 0;
 }
 
 .blogright p{
@@ -485,7 +495,7 @@
     font-size: 5vw;
     font-weight: 100;
     font-family: 'suisseintl-medium';
-    margin-bottom: 100px;
+    margin-bottom: 5vw;
 }
 
 .videocontainer{
@@ -497,7 +507,7 @@
 }
 
 .lastvideo{
-    height: 900px;
+    height: 45vw;
     width: 100%;
     background-color: rgb(51, 51, 51);
 }
@@ -514,13 +524,13 @@
     left: 35%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 2.5vw;
 }
 
 #tellusbtn{
 
-    height: 200px;
-    width: 500px;
+    height: 10vw;
+    width: 27vw;
     font-size: 5vw;
     font-family: 'suisseintl-light';
     background: transparent;
@@ -554,15 +564,15 @@
     font-size: 6vw;
     font-family: 'suisseintl-light';
     font-weight: 100;
-    line-height: 100px;
+    line-height: 5vw;
     text-align: center;
 }
 
 .footer{
-    padding: 150px 250px;
+    padding: 7.5vw 12vw;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 4vw;
 
 }
 
@@ -578,8 +588,8 @@
 
 .icon{
     background: rgb(255, 255, 255);
-    height: 60px;
-    width: 60px;
+    height: 3vw;
+    width: 3vw;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -600,7 +610,7 @@
     font-family: 'suisseintl-light';
     background: transparent;
     border: 1px solid white;
-    padding: 0px 25px; 
+    padding: 0px 1.1vw; 
     border-radius: 150px;
     color: white;
 }
@@ -612,7 +622,7 @@
 
 .footerupright{
     display: flex;
-    gap: 50px;
+    gap: 2.5vw;
 }
 
 .footerdownleft{
@@ -623,7 +633,7 @@
 
 .footerdownright{
     display: flex;
-    gap: 20px;
+    gap: 1vw;
 
 }
 
@@ -637,13 +647,13 @@
 .nava{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.5vw;
 }
 
 .navb{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.5vw;
 }
 
 .footerupleft h1{
@@ -653,23 +663,23 @@
 }
 
 .email{
-    padding-right: 50px;
-    line-height: 25px;
+    padding-right: 2.5vw;
+    line-height: 1.1vw;
 
 }
 
 .email h1{
-    margin-top: 30px;
+    margin-top: 1.5vw;
 }
 
 .number{
-    padding-right: 50px;
-    line-height: 25px;
+    padding-right: 2.5vw;
+    line-height: 1.1vw;
 
 }
 
 .number h1{
-    margin-top: 30px;
+    margin-top: 1.5vw;
 }
 
 .footerdownleft h1{
